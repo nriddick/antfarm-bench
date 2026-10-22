@@ -1,0 +1,13 @@
+{
+  "name": "opaque-c-gol-4096",
+  "batches": [
+    {
+      "kind": "gol",
+      "items": 16777216,
+      "iterations": 4096,
+      "grain": 256,
+      "waves": 4,
+      "repeat": 1
+    }
+  ]
+}

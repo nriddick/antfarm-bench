@@ -1,0 +1,10 @@
+{
+  "name": "scheduler-frame-small-v0",
+  "description": "Sequentially joined batches; a fixed recipe shared by all worker counts. Counts are provisional, not calibrated nanosecond costs.",
+  "batches": [
+    {"kind": "m1", "items": 4093, "iterations": 32, "grain": 64, "waves": 1, "repeat": 2},
+    {"kind": "m4", "items": 2047, "iterations": 32, "grain": 64, "waves": 1, "repeat": 2},
+    {"kind": "m6", "items": 1021, "iterations": 32, "grain": 64, "waves": 4, "repeat": 2},
+    {"kind": "m1", "items": 4093, "iterations": 32, "grain": 64, "waves": 1, "repeat": 1}
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "wave": "pass1",
+  "concurrency": 6,
+  "seed": 1792591283,
+  "order": [
+    [
+      "opus-high",
+      "rayon"
+    ],
+    [
+      "sonnet-high",
+      "antfarm"
+    ],
+    [
+      "sonnet-medium",
+      "tbb"
+    ],
+    [
+      "sonnet-medium",
+      "antfarm"
+    ],
+    [
+      "sonnet-high",
+      "rayon"
+    ],
+    [
+      "opus-medium",
+      "antfarm"
+    ],
+    [
+      "sonnet-medium",
+      "rayon"
+    ],
+    [
+      "opus-high",
+      "tbb"
+    ],
+    [
+      "sonnet-high",
+      "tbb"
+    ],
+    [
+      "opus-medium",
+      "tbb"
+    ],
+    [
+      "opus-high",
+      "antfarm"
+    ],
+    [
+      "opus-medium",
+      "rayon"
+    ]
+  ],
+  "started": "2026-10-21T14:01:23.226177+00:00",
+  "trajectories": {
+    "opus-high-rayon": {
+      "started": "2026-10-21T14:01:23.226507+00:00",
+      "ended": "2026-10-21T16:38:43.309980+00:00",
+      "exit_code": 0
+    },
+    "sonnet-high-antfarm": {
+      "started": "2026-10-21T14:01:43.227210+00:00",
+      "ended": "2026-10-21T16:39:18.311293+00:00",
+      "exit_code": 0
+    },
+    "sonnet-medium-tbb": {
+      "started": "2026-10-21T14:02:03.227926+00:00",
+      "ended": "2026-10-21T15:39:23.275018+00:00",
+      "exit_code": 0
+    },
+    "sonnet-medium-antfarm": {
+      "started": "2026-10-21T14:02:23.228849+00:00",
+      "ended": "2026-10-21T16:39:18.311801+00:00",
+      "exit_code": 0
+    },
+    "sonnet-high-rayon": {
+      "started": "2026-10-21T14:02:43.229483+00:00",
+      "ended": "2026-10-21T16:39:18.314943+00:00",
+      "exit_code": 0
+    },
+    "opus-medium-antfarm": {
+      "started": "2026-10-21T14:03:03.230088+00:00",
+      "ended": "2026-10-21T16:39:18.315344+00:00",
+      "exit_code": 0
+    },
+    "sonnet-medium-rayon": {
+      "started": "2026-10-21T15:39:38.275721+00:00",
+      "ended": "2026-10-21T19:13:23.393183+00:00",
+      "exit_code": 0
+    },
+    "opus-high-tbb": {
+      "started": "2026-10-21T16:38:58.310731+00:00",
+      "ended": "2026-10-21T19:13:23.393475+00:00",
+      "exit_code": 0
+    },
+    "sonnet-high-tbb": {
+      "started": "2026-10-21T16:39:33.315937+00:00",
+      "ended": "2026-10-21T20:06:53.425982+00:00",
+      "exit_code": 0
+    },
+    "opus-medium-tbb": {
+      "started": "2026-10-21T16:39:53.316741+00:00",
+      "ended": "2026-10-21T20:04:53.421042+00:00",
+      "exit_code": 0
+    },
+    "opus-high-antfarm": {
+      "started": "2026-10-21T16:40:13.317433+00:00",
+      "ended": "2026-10-21T20:04:53.421324+00:00",
+      "exit_code": 0
+    },
+    "opus-medium-rayon": {
+      "started": "2026-10-21T16:40:33.318125+00:00",
+      "ended": "2026-10-21T20:05:08.424756+00:00",
+      "exit_code": 0
+    }
+  },
+  "ended": "2026-10-21T20:07:08.426300+00:00"
+}

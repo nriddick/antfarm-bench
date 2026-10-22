@@ -1,0 +1,4 @@
+[toolchain]
+# Enforced by scripts/unified/toolchain.sh for system rustc without rustup.
+channel = "1.99.0"
+profile = "minimal"

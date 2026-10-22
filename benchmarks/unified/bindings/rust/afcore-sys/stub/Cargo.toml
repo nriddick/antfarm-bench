@@ -1,0 +1,15 @@
+[package]
+name = "afbench-impl"
+version = "0.1.0"
+edition = "2024"
+[[bin]]
+name = "benchmark"
+path = "impl/main.rs"
+[dependencies]
+afcore-sys = { path = ".." }
+rayon = "=1.10.0"
+[features]
+audit = ["afcore-sys/audit"]
+[profile.release]
+opt-level = 3
+lto = false

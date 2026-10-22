@@ -1,0 +1,46 @@
+{
+  "name": "scheduler-frame-gol-heavy-v1",
+  "description": "Sequentially joined batches; a fixed recipe shared by all worker counts. Counts are provisional, not calibrated nanosecond costs.",
+  "batches": [
+    {
+      "kind": "m1",
+      "items": 16372,
+      "iterations": 64,
+      "grain": 64,
+      "waves": 1,
+      "repeat": 2
+    },
+    {
+      "kind": "m4",
+      "items": 8188,
+      "iterations": 64,
+      "grain": 64,
+      "waves": 1,
+      "repeat": 2
+    },
+    {
+      "kind": "m6",
+      "items": 4084,
+      "iterations": 64,
+      "grain": 64,
+      "waves": 4,
+      "repeat": 2
+    },
+    {
+      "kind": "gol",
+      "items": 65536,
+      "iterations": 256,
+      "grain": 256,
+      "waves": 8,
+      "repeat": 1
+    },
+    {
+      "kind": "m1",
+      "items": 16372,
+      "iterations": 64,
+      "grain": 64,
+      "waves": 1,
+      "repeat": 1
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "objects": {
+    "kernels-plain.o": "bdb9e282c838ed4a2677c22a25107e506237c6c410d3bb4fd4e7385141029b5c",
+    "kernels-audit.o": "38ad2657ed908654802426173a196cbc90ee579308b1842152e9635a60f0d3c7"
+  },
+  "core_libraries": {
+    "libafcore.a": "a6136443b2599eaa12f962edfaf225af68eab2710f1906ebe574a319fc139d2f",
+    "libafcore.so": "535f7526ad55ceaaf1e9794c826be0752dba5eb1f443854c11b24f5f64e47b6f",
+    "libafcore-audit.a": "f4b97d0d81535ba89939281234127b7676f90e1dedad6973accf4d4f4a739504",
+    "libafcore-audit.so": "4bb3453726e32c268100011f81f3e6aad81fbdb66f5145cca6fb2e38743287d0"
+  },
+  "sources": {
+    "benchmarks/unified/microframe/kernels.c": "ee001e4f5856a300ec0f15df6b7fdf04a2a46cf7c44536ce3ebf678f685ec0a5",
+    "benchmarks/unified/microframe/microframe.h": "4260d69957bd91025f0c1dd3680c021241c6bf988a252eb890241d80812f04c9",
+    "benchmarks/unified/core/src/afcore_internal.h": "b4f94462e01327a4940e3db9cbf75a430d229d8a35e83b91b1bdcdd48153f77d",
+    "benchmarks/unified/core/src/audit.c": "d94b14029b9843619827a051d162df1789fbef99b01aa5567fbb116cb6b4f910",
+    "benchmarks/unified/core/src/gol.c": "375b77b086775154fc29c3c00f4534bfb00d828e4dbc7157b2614aac4d7cdac0",
+    "benchmarks/unified/core/src/json.c": "977067214fd928fcf0f4def902c8adfc49127ec8741fc815ae355bdc07086803",
+    "benchmarks/unified/core/src/registry.c": "2867e61f8f385c3202af3a0d9aa8636d77841ccdaf13e9639b1c1a2fdbd0aa41",
+    "benchmarks/unified/core/src/services.c": "9094be16bded70662761fb0b5841e7201331a3168ca8450af3d66ff387e1b85e",
+    "benchmarks/unified/core/src/topology_cpus.c": "1a250aa9b43e7e66926ab453589b116813dda6d474f6934ea4ad5902b56e1c38",
+    "benchmarks/unified/core/include/afcore.h": "813c26a611a685044d8f6e3d0e1de064c2eabeb61f5bf82fcc24790df14effe6"
+  },
+  "commands": {
+    "plain": [
+      "clang",
+      "-O2",
+      "-DNDEBUG",
+      "-fPIC",
+      "-std=c11",
+      "-pthread",
+      "-fvisibility=hidden",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I/home/nathan-riddick/pi_ground/antfarm_savina/benchmarks/unified/microframe",
+      "-I/home/nathan-riddick/pi_ground/antfarm_savina/benchmarks/unified/core/include",
+      "-I/home/nathan-riddick/pi_ground/antfarm_savina/benchmarks/unified/core/src",
+      "-c",
+      "/home/nathan-riddick/pi_ground/antfarm_savina/benchmarks/unified/microframe/kernels.c",
+      "-o",
+      "/home/nathan-riddick/pi_ground/antfarm_savina/results/unified/open-frame/payload/kernels-plain.o"
+    ],
+    "audit": [
+      "clang",
+      "-O2",
+      "-DNDEBUG",
+      "-fPIC",
+      "-std=c11",
+      "-pthread",
+      "-fvisibility=hidden",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I/home/nathan-riddick/pi_ground/antfarm_savina/benchmarks/unified/microframe",
+      "-I/home/nathan-riddick/pi_ground/antfarm_savina/benchmarks/unified/core/include",
+      "-I/home/nathan-riddick/pi_ground/antfarm_savina/benchmarks/unified/core/src",
+      "-DMF_AUDIT",
+      "-c",
+      "/home/nathan-riddick/pi_ground/antfarm_savina/benchmarks/unified/microframe/kernels.c",
+      "-o",
+      "/home/nathan-riddick/pi_ground/antfarm_savina/results/unified/open-frame/payload/kernels-audit.o"
+    ]
+  },
+  "compiler": "clang version 23.1.1\nTarget: x86_64-pc-linux-gnu\nThread model: posix\nInstalledDir: /usr/bin\n",
+  "source_head": "92999b1f08cc76393e0884d1f7b4da2a96e84a9f",
+  "source_status": ""
+}

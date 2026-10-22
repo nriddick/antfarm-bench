@@ -1,0 +1,13 @@
+{
+  "name": "opaque-c-gol-64",
+  "batches": [
+    {
+      "kind": "gol",
+      "items": 4096,
+      "iterations": 64,
+      "grain": 256,
+      "waves": 16,
+      "repeat": 1
+    }
+  ]
+}

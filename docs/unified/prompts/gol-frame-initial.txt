@@ -1,0 +1,11 @@
+Implement native Game of Life and composite-frame execution using {library} in {workspace}, starting from the supplied stubs. RUN.md has the interfaces, editable files, worker contract, commands and testing budget; the scripts and harness need not be read. A later turn provides one profiler-guided optimization pass.
+
+The comparison is what idiomatic {library} code achieves, so {library} itself must distribute and balance the work through its own parallel constructs and scheduler. Configure the library as you see fit, including hosting, waiting, affinity within the allocation, caller participation, partitioning and overlap of independent batches. Static partitions and your own synchronization between dependent phases are fine. Your own task queues, claim counters, work stealing, or worker loops that pull work outside the library's scheduler are not. If a library feature falls short, report it rather than replacing it.
+
+Native GoL: synchronous toroidal B3/S23 on byte cells, each cell computed once per generation from its predecessor, with the actual result reported on the computing thread. No temporal blocking, work avoidance, memoization, SWAR or explicit SIMD; autovectorization is allowed. Document grain=0 and positive-grain rounding.
+
+Execute the opaque frame payload unchanged with exact coverage. Do not alter protected inputs; report harness faults instead.
+
+Read only this workspace, installed toolchain and runtime documentation, profiler documentation and machine topology. No network, delegation, other solutions or results, or reference-kernel inspection. Keep failed attempts and evidence. Do not test exhaustively.
+
+Finish with concise design and hosting choices, which {library} features distribute the work, correctness results, evidence paths and unresolved issues.
